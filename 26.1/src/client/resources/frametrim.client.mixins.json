@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.frtr.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "FrostMxn",
+    "EntMxn",
+    "BlkMxn",
+    "PrtMxn"
+  ]
+}

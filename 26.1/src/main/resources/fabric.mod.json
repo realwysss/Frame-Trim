@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "frametrim",
+	"version": "${version}",
+	"name": "Frame Trim",
+	"description": "more fps by skipping what is too far away to matter: far entities, far particles and far block entities, with a limit for each. an adaptive mode tightens the limits when your fps drops. press K for the settings.",
+	"authors": ["wysss"],
+	"contact": {"sources": "https://github.com/realwysss/Frame-Trim"},
+	"license": "All-Rights-Reserved",
+	"icon": "assets/frametrim/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.frtr.FrTr"],
+		"modmenu": ["dev.frtr.ModmenuIntgr"]
+	},
+	"mixins": [
+		{
+			"config": "frametrim.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"suggests": {
+		"modmenu": "*"
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"fabric-api": "*",
+		"minecraft": ">=26.1 <26.2",
+		"java": ">=25"
+	}
+}
